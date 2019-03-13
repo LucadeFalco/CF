@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="TIBCO BW MySQL DataSource Factory">
+   <implementation class="com.tibco.bw.jdbc.datasourcefactory.mysql.MySQLDataSourceFactory"/>
+   
+   <property name="osgi.jdbc.driver.class" type="String" value="com.mysql.jdbc.Driver"/>
+   <property name="osgi.jdbc.driver.name" type="String" value="mysql"/>
+   <property name="osgi.jdbc.driver.version" type="String" value="5.1.19"/>
+   
+   <service>
+      <provide interface="org.osgi.service.jdbc.DataSourceFactory"/>
+   </service>
+</scr:component>
